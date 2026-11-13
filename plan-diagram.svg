@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="150 -560 1720 1700" width="1720" height="1700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title>Mesa Ranch fencing plan: all four phases</title>
+  <desc>A drawing traced from two Google Maps screenshots with hand-drawn fence lines. It is not to scale. Phase 1 (pink) is the goat paddock. Phase 2 (teal) is the pasture to the southwest. Phase 3 is the arena (yellow) and the orchard (purple) to the north. Phase 4 (blue) joins the goat paddock to the arena. Numbered circles are gates.</desc>
+  <style>
+    .p1 { stroke: #d23fd5; } .p2 { stroke: #11a2b2; } .p3a { stroke: #d1a300; } .p3b { stroke: #9a4fd0; } .p4 { stroke: #2443e0; }
+    .fence { fill: none; stroke-width: 12; stroke-linecap: round; stroke-linejoin: round; }
+    .area { stroke: none; }
+    .bldg { fill: #8c877d; stroke: #5f5a51; stroke-width: 3; }
+    .bldg.light { fill: #c9c4b8; }
+    .house { fill: #6f6a61; stroke: #4a463f; stroke-width: 3; }
+    .gate { fill: #fff; stroke-width: 6; }
+    .lead { stroke: #3d3a35; stroke-width: 2.5; }
+    .badge text { font-size: 30px; font-weight: 700; text-anchor: middle; dominant-baseline: central; fill: #fff; }
+    .badge.dark text { fill: #2b2600; }
+    .region { font-size: 40px; font-weight: 700; fill: #2c2a25; }
+    .region-sub { font-size: 26px; font-weight: 600; fill: #57524a; }
+    .lbl { font-size: 25px; fill: #3d3a35; font-weight: 600; }
+    .edge { font-size: 24px; fill: #6c675d; font-style: italic; }
+  </style>
+
+  <rect x="150" y="-560" width="1720" height="1700" fill="#f4f2ea"/>
+
+  <!-- Filled areas -->
+  <path class="area" fill="#11a2b2" fill-opacity=".12" d="M1345 540 L1275 920 L968 1080 L678 1088 L210 895 L310 690 L495 560 L980 625 L1255 440 L1310 435 Z"/>
+  <path class="area" fill="#d23fd5" fill-opacity=".16" d="M1310 435 L1345 540 L1520 492 L1468 318 L1440 325 L1458 398 Z"/>
+  <path class="area" fill="#f2e21f" fill-opacity=".30" d="M1475 45 L1712 128 L1672 293 L1425 218 Z"/>
+  <path class="area" fill="#9a4fd0" fill-opacity=".10" d="M1405 -61 L1371 -320 L1718 -498 L1744 -425 L1627 98 L1475 45 L1404 17 Z"/>
+  <path class="area" fill="#2443e0" fill-opacity=".09" d="M1520 492 L1660 450 L1672 293 L1590 268 L1585 310 L1575 410 L1500 425 Z"/>
+
+  <!-- Buildings -->
+  <rect class="house" x="1005" y="355" width="80" height="140" rx="4" transform="rotate(-28 1045 425)"/>
+  <rect class="bldg" x="1376" y="-64" width="34" height="95" rx="3"/>
+  <rect class="bldg" x="1452" y="262" width="40" height="52" rx="3"/>
+  <rect class="bldg light" x="1520" y="272" width="68" height="34" rx="3" transform="rotate(12 1554 289)"/>
+  <rect class="bldg light" x="1536" y="398" width="38" height="28" rx="3"/>
+
+  <!-- Phase 2: pasture, plus the paddock north side it replaces -->
+  <path class="fence p2" d="M1345 540 L1275 920 L968 1080 L678 1088 L210 895 L310 690 L495 560 L980 625 L1255 440 L1310 435 L1458 398 L1440 325"/>
+  <!-- Phase 1: goat paddock -->
+  <path class="fence p1" d="M1310 435 L1345 540 L1520 492 L1468 318"/>
+  <!-- Phase 3: arena and orchard -->
+  <path class="fence p3a" d="M1475 45 L1712 128 L1672 293 L1425 218 Z"/>
+  <path class="fence p3b" d="M1405 -61 L1371 -320 L1718 -498 L1744 -425 L1627 98"/>
+  <path class="fence p3b" d="M1404 17 L1477 49"/>
+  <!-- Phase 4: bigger goat paddock -->
+  <path class="fence p4" d="M1520 492 L1660 450 L1672 293"/>
+  <path class="fence p4" d="M1527 250 L1530 280"/>
+  <path class="fence p4" d="M1585 312 L1575 404"/>
+
+  <!-- Region labels -->
+  <text class="region" x="700" y="830" text-anchor="middle">Pasture</text>
+  <text class="region-sub" x="700" y="866" text-anchor="middle">Phase 2</text>
+  <text class="region" x="1566" y="170" text-anchor="middle" font-size="34">Arena</text>
+  <text class="region-sub" x="1566" y="202" text-anchor="middle">Phase 3</text>
+  <text class="region" x="1560" y="-250" text-anchor="middle">Orchard</text>
+  <text class="region-sub" x="1560" y="-214" text-anchor="middle">Phase 3 · 6 ft fence</text>
+  <text class="lbl" x="1415" y="455" text-anchor="middle">Goats</text>
+  <text class="region-sub" x="1415" y="484" text-anchor="middle" font-size="22">Phase 1</text>
+  <text class="lbl" x="1700" y="560" text-anchor="end" fill="#2443e0">Phase 4: bigger paddock</text>
+  <line class="lead" x1="1640" y1="532" x2="1610" y2="455"/>
+
+  <text class="lbl" x="1045" y="300" text-anchor="middle">House</text>
+  <text class="lbl" x="1360" y="-10" text-anchor="end">Green barn</text>
+  <text class="lbl" x="1692" y="352">Large shed</text>
+  <text class="lbl" x="1692" y="380">(41)</text>
+  <line class="lead" x1="1686" y1="344" x2="1594" y2="296"/>
+
+  <text class="edge" x="560" y="1010" transform="rotate(22 560 1010)">Woodline</text>
+  <text class="edge" x="300" y="630" transform="rotate(-35 300 630)">West end</text>
+  <text class="edge" x="720" y="565" transform="rotate(8 720 565)">House side</text>
+
+  <!-- Gate dots on the fence lines -->
+  <circle class="gate p1" cx="1327" cy="489" r="13"/>
+  <circle class="gate p1" cx="1500" cy="425" r="13"/>
+  <circle class="gate p2" cx="1215" cy="467" r="13"/>
+  <circle class="gate p3a" cx="1588" cy="85" r="13"/>
+  <circle class="gate p3a" cx="1556" cy="258" r="13"/>
+  <circle class="gate p3b" cx="1434" cy="30" r="13"/>
+  <circle class="gate p3b" cx="1390" cy="-134" r="13"/>
+  <circle class="gate p3b" cx="1598" cy="-437" r="13"/>
+  <circle class="gate p3b" cx="1637" cy="56" r="13"/>
+  <circle class="gate p4" cx="1528" cy="266" r="13"/>
+
+  <!-- Numbered badges -->
+  <g class="badge"><line class="lead" x1="1327" y1="489" x2="1268" y2="512"/><circle cx="1262" cy="515" r="27" fill="#d23fd5"/><text x="1262" y="516">1</text></g>
+  <g class="badge"><line class="lead" x1="1500" y1="425" x2="1470" y2="360"/><circle cx="1470" cy="356" r="27" fill="#d23fd5"/><text x="1470" y="357">2</text></g>
+  <g class="badge"><line class="lead" x1="1215" y1="467" x2="1170" y2="420"/><circle cx="1166" cy="415" r="27" fill="#11a2b2"/><text x="1166" y="416">3</text></g>
+  <g class="badge dark"><line class="lead" x1="1588" y1="85" x2="1556" y2="36"/><circle cx="1552" cy="30" r="27" fill="#e8c700"/><text x="1552" y="31">4</text></g>
+  <g class="badge dark"><line class="lead" x1="1556" y1="258" x2="1626" y2="236"/><circle cx="1630" cy="234" r="27" fill="#e8c700"/><text x="1630" y="235">5</text></g>
+  <g class="badge"><line class="lead" x1="1434" y1="30" x2="1404" y2="82"/><circle cx="1400" cy="88" r="27" fill="#9a4fd0"/><text x="1400" y="89">6</text></g>
+  <g class="badge"><line class="lead" x1="1390" y1="-134" x2="1330" y2="-134"/><circle cx="1322" cy="-134" r="27" fill="#9a4fd0"/><text x="1322" y="-133">7</text></g>
+  <g class="badge"><line class="lead" x1="1598" y1="-437" x2="1574" y2="-492"/><circle cx="1570" cy="-500" r="27" fill="#9a4fd0"/><text x="1570" y="-499">8</text></g>
+  <g class="badge"><line class="lead" x1="1637" y1="56" x2="1700" y2="44"/><circle cx="1708" cy="42" r="27" fill="#9a4fd0"/><text x="1708" y="43">9</text></g>
+  <g class="badge"><line class="lead" x1="1528" y1="266" x2="1420" y2="262"/><circle cx="1400" cy="262" r="27" fill="#2443e0"/><text x="1400" y="263">10</text></g>
+
+  <!-- North arrow and note -->
+  <g transform="translate(240 -470)">
+    <path d="M0 -40 L18 10 L0 0 L-18 10 Z" fill="#3d3a35"/>
+    <text x="0" y="44" text-anchor="middle" class="lbl">N</text>
+  </g>
+  <text x="180" y="1120" class="edge" font-size="22">Traced from hand-drawn Google Maps lines. Not to scale.</text>
+</svg>

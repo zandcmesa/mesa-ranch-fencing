@@ -1,0 +1,100 @@
+:root {
+  --bg: #faf8f4; --card: #fff; --ink: #26231e; --muted: #6b645a; --line: #e3ddd2;
+  --accent: #5d6b3a; --tint: #eef0e4; --warn: #8a5a2b; --warn-bg: #f8efe2;
+  --p1: #e55be8; --p2: #5ff0f5; --p3a: #f7ef3a; --p3b: #c56cf0; --p4: #1f3ff0;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1c1a17; --card: #272420; --ink: #efeae1; --muted: #a9a196; --line: #3b372f;
+    --accent: #a9bb78; --tint: #2f3324; --warn: #d6a26b; --warn-bg: #33291c;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1c1a17; --card: #272420; --ink: #efeae1; --muted: #a9a196; --line: #3b372f;
+  --accent: #a9bb78; --tint: #2f3324; --warn: #d6a26b; --warn-bg: #33291c;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 860px; margin: 0 auto; padding: 20px 16px 72px; }
+a { color: var(--accent); }
+h1 { font-size: 30px; line-height: 1.15; margin: 6px 0 6px; letter-spacing: -.01em; }
+h2 { font-size: 23px; line-height: 1.25; margin: 44px 0 10px; }
+h3 { font-size: 18px; margin: 20px 0 6px; }
+p { margin: 0 0 12px; }
+ul, ol { margin: 0 0 12px; padding-left: 22px; }
+li { margin-bottom: 7px; }
+.eyebrow { font-size: 13px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); margin: 0; }
+.byline { color: var(--muted); font-size: 15px; margin-bottom: 14px; }
+.lede { font-size: 18px; }
+.muted { color: var(--muted); }
+.small { font-size: 14.5px; }
+.jump { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 4px; padding: 0; list-style: none; }
+.jump li { margin: 0; }
+.jump a { display: inline-block; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--card); color: var(--ink); text-decoration: none; font-size: 15px; }
+
+.overview { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 14px 0; }
+.ov { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; border-top: 5px solid var(--c); }
+.ov .eyebrow { margin-bottom: 2px; }
+.ov b { display: block; font-size: 18px; line-height: 1.25; margin-bottom: 4px; }
+.ov span { display: block; font-size: 14.5px; color: var(--muted); }
+.ov .status { margin-top: 8px; font-size: 13.5px; font-weight: 600; color: var(--ink); }
+.ov.now .status { color: var(--accent); }
+
+.swatch { display: inline-block; width: 14px; height: 14px; border-radius: 3px; margin-right: 6px; vertical-align: -2px; border: 1px solid rgba(0,0,0,.25); }
+.swatch.ring { background: transparent; border: 2.5px solid #e0301e; border-radius: 50%; }
+.key { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14.5px; margin: 8px 0; }
+
+.map { display: block; position: relative; margin: 10px 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; line-height: 0; }
+.map img { width: 100%; height: auto; display: block; }
+.pin { position: absolute; width: 26px; height: 26px; margin: -13px 0 0 -13px; border-radius: 50%; background: #fff; color: #111; border: 2px solid #111; font: 700 14px/22px -apple-system, BlinkMacSystemFont, sans-serif; text-align: center; }
+.legend { padding-left: 28px; }
+.legend li::marker { font-weight: 700; }
+
+.phase { background: var(--card); border: 1px solid var(--line); border-left: 6px solid var(--c); border-radius: 10px; padding: 16px 18px 8px; margin: 14px 0; }
+.phase h2 { margin: 2px 0 4px; }
+.phase .when { color: var(--muted); font-size: 15px; margin-bottom: 12px; }
+.phase.now .eyebrow { color: var(--accent); }
+.specs { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 0; margin: 4px 0 14px; border-top: 1px solid var(--line); }
+.specs dt, .specs dd { margin: 0; padding: 9px 0; border-bottom: 1px solid var(--line); }
+.specs dt { font-weight: 600; font-size: 15px; padding-right: 12px; }
+.specs dd { font-size: 16px; }
+.ask { background: var(--warn-bg); border-left: 4px solid var(--warn); border-radius: 0 8px 8px 0; padding: 10px 14px; margin: 12px 0 14px; }
+.ask p:last-child, .ask ul:last-child { margin-bottom: 0; }
+.ask .eyebrow { color: var(--warn); margin-bottom: 4px; }
+
+.gates { list-style: none; padding: 0; margin: 10px 0; }
+.gates li { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 2px 12px; padding: 10px 0; border-bottom: 1px solid var(--line); margin: 0; }
+.gates li:first-child { border-top: 1px solid var(--line); }
+.gates .size { font-weight: 700; font-variant-numeric: tabular-nums; }
+.gates .ph { font-size: 13px; color: var(--muted); grid-column: 2; }
+
+.xsec { margin: 12px 0 18px; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px; }
+.xsec svg { width: 100%; height: auto; display: block; font: 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+.xsec figcaption { margin-top: 6px; }
+.xsec .ruler line, .xsec .ground { stroke: var(--muted); stroke-width: 1.5; }
+.xsec .ruler text { fill: var(--muted); text-anchor: end; font-size: 12px; }
+.xsec .post { fill: #a08060; }
+.xsec .rail { fill: #7a5c3e; }
+.xsec .mesh { stroke: var(--ink); stroke-width: 3; stroke-dasharray: 4 3; }
+.xsec .bracket { stroke: var(--muted); stroke-width: 2.5; fill: none; }
+.xsec .hot { fill: var(--warn); }
+.xsec .hot.horse { fill: #fff; stroke: var(--warn); stroke-width: 3; }
+.xsec .lead { stroke: var(--muted); stroke-width: 1; }
+.xsec .lbl { fill: var(--ink); font-weight: 600; }
+.xsec .lbl.sub { fill: var(--muted); font-weight: 400; font-size: 12px; }
+.xsec .side { fill: var(--muted); font-size: 12px; }
+
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14.5px; }
+
+@media (max-width: 600px) {
+  body { font-size: 16.5px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 21px; }
+  .overview { grid-template-columns: minmax(0, 1fr); }
+  .specs { grid-template-columns: minmax(0, 1fr); }
+  .specs dt { border-bottom: 0; padding-bottom: 0; }
+  .specs dd { padding-top: 2px; }
+  .phase { padding: 14px 14px 6px; }
+  .pin { width: 20px; height: 20px; margin: -10px 0 0 -10px; font-size: 11px; line-height: 16px; }
+}
