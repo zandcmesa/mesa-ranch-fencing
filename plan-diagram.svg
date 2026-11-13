@@ -18,7 +18,7 @@
     .edge { font-size: 24px; fill: #6c675d; font-style: italic; }
   </style>
 
-  <rect x="150" y="-560" width="1720" height="1700" fill="#f4f2ea"/>
+  <rect x="150" y="-560" width="1720" height="1700" fill="#f6f1ea"/>
 
   <!-- Filled areas -->
   <path class="area" fill="#11a2b2" fill-opacity=".12" d="M1345 540 L1275 920 L968 1080 L678 1088 L210 895 L310 690 L495 560 L980 625 L1255 440 L1310 435 Z"/>
